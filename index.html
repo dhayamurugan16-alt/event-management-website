@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management - Unforgettable Experiences</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Events<span>.</span></a>
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#highlights" class="nav-link">Events</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#process" class="nav-link">Process</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <!-- Slideshow Backgrounds -->
+        <div class="hero-slides">
+            <div class="slide active"
+                style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2069&auto=format&fit=crop');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=2070&auto=format&fit=crop');">
+            </div>
+        </div>
+
+        <div class="container hero-content">
+            <h1 class="hero-title fade-up">EVENT MANAGEMENT</h1>
+            <p class="hero-subtitle fade-up delay-1">We plan, design, and execute unforgettable experiences.</p>
+            <a href="#contact" class="btn btn-primary fade-up delay-2">Book Your Event</a>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="slider-indicators">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image fade-up">
+                <!-- Placeholder Image - Will replace with generated realistic one later if needed -->
+                <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2162&auto=format&fit=crop"
+                    alt="Event Planning Team">
+                <div class="experience-badge">
+                    <span class="number">10+</span>
+                    <span class="text">Years of<br>Excellence</span>
+                </div>
+            </div>
+
+            <div class="about-content fade-up delay-1">
+                <h2 class="section-title left-align">About Our Company</h2>
+                <h3 class="about-subtitle">Crafting memories that last a lifetime.</h3>
+                <p>With over a decade of experience in the event management industry, we specialize in curating bespoke
+                    events tailored to your unique vision. From intimate gatherings to grand celebrations, our dedicated
+                    team of professionals ensures every detail is executed flawlessly.</p>
+                <p>We pride ourselves on our meticulous planning, innovative designs, and seamless execution. We don't
+                    just plan events; we create extraordinary experiences that resonate with your guests long after the
+                    final toast.</p>
+
+                <div class="social-icons">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission" id="vision">
+        <div class="vision-overlay"></div>
+        <div class="container vision-container position-relative">
+            <div class="vision-box fade-up">
+                <div class="icon-wrapper"><i class="fas fa-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To be the world’s premier event management agency, recognized for our unparalleled creativity,
+                    passion, and commitment to delivering unforgettable moments that transcend the ordinary.</p>
+            </div>
+
+            <div class="mission-box fade-up delay-1">
+                <div class="icon-wrapper"><i class="fas fa-bullseye"></i></div>
+                <h3>Our Mission</h3>
+                <p>To provide exceptional, stress-free event planning services by combining innovative design,
+                    transparent communication, and meticulous execution, bringing our clients' dreams to reality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title fade-up">Our Services</h2>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-up">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop"
+                            alt="Wedding Planning">
+                    </div>
+                    <div class="service-content">
+                        <h3>Wedding Planning</h3>
+                        <p>From finding the perfect venue to selecting the finest flowers, we craft elegant weddings
+                            that tell your unique love story.</p>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card fade-up delay-1">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop"
+                            alt="Corporate Events">
+                    </div>
+                    <div class="service-content">
+                        <h3>Corporate Events</h3>
+                        <p>Professional product launches, conferences, and gala dinners designed to elevate your brand
+                            and engage your audience.</p>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card fade-up delay-2">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2070&auto=format&fit=crop"
+                            alt="Birthday Parties">
+                    </div>
+                    <div class="service-content">
+                        <h3>Birthday Parties</h3>
+                        <p>Creative themes, fun entertainment, and meticulous planning to make milestone birthdays truly
+                            memorable for all ages.</p>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card fade-up">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=2070&auto=format&fit=crop"
+                            alt="Concerts & Shows">
+                    </div>
+                    <div class="service-content">
+                        <h3>Concerts & Shows</h3>
+                        <p>Complete scale production including staging, lighting, sound, and talent management for live
+                            entertainment.</p>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card fade-up delay-1">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1478146059778-26028b07395a?q=80&w=2000&auto=format&fit=crop"
+                            alt="Decorations">
+                    </div>
+                    <div class="service-content">
+                        <h3>Decorations</h3>
+                        <p>Bespoke floral arrangements, ambient lighting, and thematic styling that transform any space
+                            into a magical setting.</p>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card fade-up delay-2">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop"
+                            alt="Catering Management">
+                    </div>
+                    <div class="service-content">
+                        <h3>Catering Management</h3>
+                        <p>Curated culinary experiences featuring exquisite menus, premium beverages, and impeccable
+                            service staff.</p>
+                        <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media / Highlights Section -->
+    <section class="highlights" id="highlights">
+        <div class="container">
+            <h2 class="section-title fade-up">Event Highlights</h2>
+
+            <div class="highlights-container">
+                <!-- Instagram Grid -->
+                <div class="insta-grid fade-up">
+                    <div class="insta-header">
+                        <div>
+                            <h3><i class="fab fa-instagram"></i> @EventsManagement</h3>
+                            <p>Follow us for daily inspiration</p>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm">Follow</a>
+                    </div>
+                    <div class="ig-images">
+                        <div class="ig-img"><img
+                                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop"
+                                alt="IG 1"></div>
+                        <div class="ig-img"><img
+                                src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=800&auto=format&fit=crop"
+                                alt="IG 2"></div>
+                        <div class="ig-img"><img
+                                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=800&auto=format&fit=crop"
+                                alt="IG 3"></div>
+                        <div class="ig-img"><img
+                                src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=800&auto=format&fit=crop"
+                                alt="IG 4"></div>
+                    </div>
+                </div>
+
+                <!-- Video Preview -->
+                <div class="video-preview fade-up delay-1">
+                    <div class="video-container">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
+                            alt="Video Thumbnail" class="video-thumb">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>The Making of a Royal Wedding</h3>
+                        <p>Go behind the scenes and see how our team executed one of the most prestigious events of the
+                            year.</p>
+                        <a href="#" class="yt-link"><i class="fab fa-youtube"></i> Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title fade-up">How We Work</h2>
+
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="step fade-up">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>We start by understanding your vision, preferences, and objectives for the event.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step fade-up delay-1">
+                    <div class="step-number">02</div>
+                    <h3>Planning & Design</h3>
+                    <p>Our team crafts a detailed proposal, budget, and design concept tailored to you.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step fade-up delay-2">
+                    <div class="step-number">03</div>
+                    <h3>Execution</h3>
+                    <p>We handle all logistics, vendor coordination, and setup for a seamless experience.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step fade-up">
+                    <div class="step-number">04</div>
+                    <h3>Feedback</h3>
+                    <p>Post-event evaluation to ensure complete satisfaction and gather your valuable thoughts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-up">Our Masterpieces</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large fade-up">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop"
+                        alt="Gallery 1">
+                    <div class="gallery-overlay">
+                        <h4>Grand Wedding</h4>
+                        <p>The Plaza Hotel</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-up delay-1">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop"
+                        alt="Gallery 2">
+                    <div class="gallery-overlay">
+                        <h4>Corporate Gala</h4>
+                        <p>Downtown Center</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-up delay-2">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop"
+                        alt="Gallery 3">
+                    <div class="gallery-overlay">
+                        <h4>Summer Concert</h4>
+                        <p>Open Air Arena</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-up">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2069&auto=format&fit=crop"
+                        alt="Gallery 4">
+                    <div class="gallery-overlay">
+                        <h4>Birthday Bash</h4>
+                        <p>Private Villa</p>
+                    </div>
+                </div>
+                <div class="gallery-item wide fade-up delay-1">
+                    <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2162&auto=format&fit=crop"
+                        alt="Gallery 5">
+                    <div class="gallery-overlay">
+                        <h4>Award Ceremony</h4>
+                        <p>City Hall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container container-contact">
+            <div class="contact-info fade-up">
+                <h2 class="section-title left-align">Get In Touch</h2>
+                <p class="contact-desc">Ready to start planning your next unforgettable event? Reach out to our team of
+                    experts today.</p>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>123 Event Avenue, Design District<br>New York, NY 10012</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>hello@eventsmanagement.com<br>support@eventsmanagement.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container fade-up delay-1">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="eventType" required>
+                            <option value="" disabled selected>Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="concert">Concert / Show</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Tell us about your event..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Let's Plan Your Event</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Events<span>.</span></h2>
+                    <p>Creating unforgettable experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Events Management. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Content Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
